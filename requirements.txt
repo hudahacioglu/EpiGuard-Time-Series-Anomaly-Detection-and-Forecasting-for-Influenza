@@ -1,0 +1,1 @@
+streamlit_pandas==0.0.9
