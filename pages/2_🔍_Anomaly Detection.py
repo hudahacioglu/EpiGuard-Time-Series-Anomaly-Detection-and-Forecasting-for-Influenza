@@ -42,7 +42,7 @@ st.set_page_config(
 #        unsafe_allow_html=True,
 #    )
 
-st.image(r"C:\Users\hacio\OneDrive\Desktop\Project\Logo.png",width=400)
+st.image(r"Logo.png",width=400)
 
 
 
@@ -60,7 +60,7 @@ option = st.selectbox(
 
 if option=="Before Pandemic : 2015-2020":
 
-    file = r"C:\Users\hacio\OneDrive\Desktop\Project\Needed\No Anomaly\2015_2020.csv"
+    file = "2015_2020.csv"
     df = load_data(file)
 
 
@@ -242,12 +242,12 @@ if option=="Before Pandemic : 2015-2020":
     with tabs[3]:
         st.header("2015-2020 Anomaly Detection Results Comparison")
 
-        file1 = r"C:\Users\hacio\OneDrive\Desktop\Project\Needed\With Anomaly\2015_2020_Anomaly_Detected.csv"
+        file1 = "2015_2020_Anomaly_Detected.csv"
         df1 = load_data(file1)
         
         st.dataframe(df1, use_container_width=True)
 else:
-    file1 = r"C:\Users\hacio\OneDrive\Desktop\Project\Needed\No Anomaly\2021_2024.csv"
+    file1 = "2021_2024.csv"
     df1 = load_data(file1)
 
     tab_titles = ["Threshold","Z-Score","Tukey's Model","Results Comparison"]
@@ -429,7 +429,7 @@ else:
     with tabs[3]:
         st.header("2021-2024 Anomaly Detection Results Comparison")
 
-        file2 = r"C:\Users\hacio\OneDrive\Desktop\Project\Needed\With Anomaly\2021_2024_Anomaly_Detected.csv"
+        file2 = "2021_2024_Anomaly_Detected.csv"
         df2 = load_data(file2)
         st.dataframe(df2, use_container_width=True)
 

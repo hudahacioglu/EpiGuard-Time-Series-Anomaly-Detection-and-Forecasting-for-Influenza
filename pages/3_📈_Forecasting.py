@@ -53,7 +53,7 @@ st.set_page_config(
 #        unsafe_allow_html=True,
 #    )
 
-st.image(r"C:\Users\hacio\OneDrive\Desktop\Project\Logo.png",width=400)
+st.image("Logo.png",width=400)
 
 
 def mean_absolute_percentage_error(y_true, y_pred): 
@@ -89,7 +89,7 @@ if option=="Before Pandemic : 2015-2020":
         df['weekofyear'] = df.index.isocalendar().week
         return df
 
-    file = r"C:\Users\hacio\OneDrive\Desktop\Project\Needed\No Anomaly\2015_2020.csv"
+    file = r"2015_2020.csv"
     df = load_data(file)
 
     with tabs[0]:
@@ -174,7 +174,7 @@ if option=="Before Pandemic : 2015-2020":
 
         st.header("Forecasting Using Prophet")
 
-        file1 = r"C:\Users\hacio\OneDrive\Desktop\Project\Needed\No Anomaly\2015_2020.csv"
+        file1 = "2015_2020.csv"
         df1 = load_data(file1)
 
         dataset = ["Week Start Date","Positive"]
@@ -308,7 +308,7 @@ else:
         df['weekofyear'] = df.index.isocalendar().week
         return df
 
-    file1 = r"C:\Users\hacio\OneDrive\Desktop\Project\Needed\No Anomaly\2021_2024.csv"
+    file1 = "2021_2024.csv"
     df1 = load_data(file1)
 
     with tabs[0]:
@@ -388,7 +388,7 @@ else:
     with tabs[2]:
         st.header("Forecasting Using Prophet")
     
-        file1 = r"C:\Users\hacio\OneDrive\Desktop\Project\Needed\No Anomaly\2021_2024.csv"
+        file1 = "2021_2024.csv"
         df1 = load_data(file1)
     
         dataset = ["Week Start Date","Positive"]

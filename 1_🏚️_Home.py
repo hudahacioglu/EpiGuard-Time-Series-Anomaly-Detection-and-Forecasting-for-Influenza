@@ -131,7 +131,7 @@ else :
         df = pd.read_csv(file)
         return df
 
-    file1 = r"C:\Users\hacio\OneDrive\Desktop\Project\Needed\No Anomaly\2021_2024.csv"
+    file1 = "2021_2024.csv"
     df1 = load_data(file1)
 
     tabs=st.tabs(tab_titles)
