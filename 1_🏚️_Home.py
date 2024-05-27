@@ -43,7 +43,7 @@ st.set_page_config(
 #        unsafe_allow_html=True,
 #    )
 
-st.image(r"C:\Users\hacio\OneDrive\Desktop\Project\Teknofest Kopya.png",width=400)
+st.image(r"C:\Users\hacio\OneDrive\Desktop\Project\Logo.png",width=400)
 
 st.title("Türkiye Influenza Cases")
 
