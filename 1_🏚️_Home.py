@@ -58,7 +58,7 @@ if option=="Before Pandemic : 2015-2020":
         df = pd.read_csv(file)
         return df
 
-    file = r"\Project\Needed\No Anomaly\2015_2020.csv"
+    file = r"/No Anomaly/2015_2020.csv"
     df = load_data(file)
 
     tabs=st.tabs(tab_titles)
