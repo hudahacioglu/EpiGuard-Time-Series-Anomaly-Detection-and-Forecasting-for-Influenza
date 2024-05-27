@@ -1,1 +1,2 @@
 streamlit_pandas==0.0.9
+plotly==5.22.0
