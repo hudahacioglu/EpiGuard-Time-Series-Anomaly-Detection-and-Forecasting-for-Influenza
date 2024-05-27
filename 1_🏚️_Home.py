@@ -43,7 +43,7 @@ st.set_page_config(
 #        unsafe_allow_html=True,
 #    )
 
-st.image(r"\Project\Logo.png",width=400)
+st.image(r"Logo.png",width=400)
 
 st.title("Türkiye Influenza Cases")
 
