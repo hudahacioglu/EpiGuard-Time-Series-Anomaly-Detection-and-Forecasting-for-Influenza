@@ -43,7 +43,7 @@ st.set_page_config(
 #        unsafe_allow_html=True,
 #    )
 
-st.image(r"C:\Users\hacio\OneDrive\Desktop\Project\Logo.png",width=400)
+st.image(r"\Project\Logo.png",width=400)
 
 st.title("Türkiye Influenza Cases")
 
@@ -58,7 +58,7 @@ if option=="Before Pandemic : 2015-2020":
         df = pd.read_csv(file)
         return df
 
-    file = r"C:\Users\hacio\OneDrive\Desktop\Project\Needed\No Anomaly\2015_2020.csv"
+    file = r"\Project\Needed\No Anomaly\2015_2020.csv"
     df = load_data(file)
 
     tabs=st.tabs(tab_titles)
